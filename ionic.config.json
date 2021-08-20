@@ -1,0 +1,7 @@
+{
+  "name": "Cagar Apps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
