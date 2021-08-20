@@ -27,13 +27,11 @@
         <ion-row>
           <ion-col>
             <ion-card>
-              <ion-item href="../views/page1" class="ion-activated">
-                <ion-card-header>
-                  <img src="assets/icon/icon.png" />
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-              </ion-item>
+              <ion-card-header>
+                <img src="assets/icon/icon.png" />
+                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
             </ion-card>
           </ion-col>
           <ion-col>
