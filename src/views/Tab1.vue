@@ -27,7 +27,7 @@
         <ion-row>
           <ion-col>
             <ion-card>
-              <ion-item href="../page1" class="ion-activated">
+              <ion-item href="../views/page1" class="ion-activated">
                 <ion-card-header>
                   <img src="assets/icon/icon.png" />
                   <ion-card-title>Card Title</ion-card-title>
