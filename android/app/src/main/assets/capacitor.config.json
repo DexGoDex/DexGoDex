@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Cagar Apps",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

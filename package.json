@@ -10,9 +10,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@capacitor/android": "^3.2.0",
     "@capacitor/app": "1.0.2",
-    "@capacitor/core": "3.1.2",
+    "@capacitor/core": "^3.2.0",
     "@capacitor/haptics": "1.0.2",
+    "@capacitor/ios": "^3.2.0",
     "@capacitor/keyboard": "1.0.2",
     "@capacitor/status-bar": "1.0.2",
     "@ionic/vue": "^5.4.0",
@@ -23,7 +25,7 @@
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
-    "@capacitor/cli": "3.1.2",
+    "@capacitor/cli": "^3.2.0",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
