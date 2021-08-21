@@ -14,8 +14,8 @@
         </ion-tab-button>
 
         <ion-tab-button tab="tab3" href="/tabs/tab3">
-          <ion-icon :icon="person" />
-          <ion-label>profile</ion-label>
+          <ion-icon :icon="call" />
+          <ion-label>Reservasi</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -32,7 +32,7 @@ import {
   IonPage,
   IonRouterOutlet,
 } from "@ionic/vue";
-import { map, person, home } from "ionicons/icons";
+import { map, call, home } from "ionicons/icons";
 
 export default {
   name: "Tabs",
@@ -48,9 +48,15 @@ export default {
   setup() {
     return {
       map,
-      person,
+      call,
       home,
     };
   },
 };
 </script>
+
+<style scoped>
+ion-tab-button[aria-selected="true"] {
+  color: #088b61;
+}
+</style>
