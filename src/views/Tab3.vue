@@ -8,6 +8,9 @@
           >
         </ion-toolbar>
       </ion-header>
+      <br />
+      <br />
+      <br />
       <div class="ion-text-center">
         <img src="/assets/images/illustration.png" />
         <p>
