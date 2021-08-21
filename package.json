@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "resources": "capacitor-resources -p android,ios" 
+    "resources": "capacitor-resources -p android,ios"
   },
   "dependencies": {
     "@capacitor/android": "^3.2.0",

@@ -31,19 +31,23 @@
         <p>
           Sosial media kami :
         </p>
-          <ion-icon :icon="logoInstagram"></ion-icon>
-          <ion-icon :icon="logoTwitter"></ion-icon>
-          <ion-icon :icon="logoFacebook"></ion-icon>
+        <ion-icon :icon="logoInstagram"></ion-icon>
+        <ion-icon :icon="logoTwitter"></ion-icon>
+        <ion-icon :icon="logoFacebook"></ion-icon>
       </div>
-
- 
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonTitle, IonContent } from "@ionic/vue";
-import { call, logoInstagram, logoTwitter, logoFacebook, calculator } from "ionicons/icons";
+import {
+  call,
+  logoInstagram,
+  logoTwitter,
+  logoFacebook,
+  calculator,
+} from "ionicons/icons";
 
 export default {
   name: "Tab3",
@@ -59,7 +63,7 @@ export default {
       logoInstagram,
       logoTwitter,
       logoFacebook,
-      calculator
+      calculator,
     };
   },
 };
