@@ -1,14 +1,14 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
+      
         <ion-title class="ion-text-center"
           ><strong>
             Hai Muktikers! <br />Apa Yang Kamu <br />Ingin Lakukan Hari
             Ini?</strong
           ></ion-title
         >
-      </ion-toolbar>
+      
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-title class="ion-text-center"
@@ -90,7 +90,6 @@ import {
   IonSlide,
   IonPage,
   IonHeader,
-  IonToolbar,
   IonTitle,
   IonContent,
 } from "@ionic/vue";
@@ -108,7 +107,6 @@ export default {
     IonSlides,
     IonSlide,
     IonHeader,
-    IonToolbar,
     IonTitle,
     IonContent,
     IonPage,
