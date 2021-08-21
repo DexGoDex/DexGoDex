@@ -22,9 +22,7 @@
         </ion-button>
       </div>
       <div class="ion-text-center">
-        <p>
-          Selain yg ada diaplikasi ini, semuanya penipuan
-        </p>
+        <p>Selain yg ada diaplikasi ini, <br />semuanya penipuan</p>
       </div>
       <div class="ion-text-center">
         <p>
