@@ -1,14 +1,12 @@
 <template>
   <ion-page>
     <ion-header>
-      
-        <ion-title class="ion-text-center"
-          ><strong>
-            Hai Muktikers! <br />Apa Yang Kamu <br />Ingin Lakukan Hari
-            Ini?</strong
-          ></ion-title
-        >
-      
+      <ion-title class="ion-text-center"
+        ><strong>
+          Hai Muktikers! <br />Apa Yang Kamu <br />Ingin Lakukan Hari
+          Ini?</strong
+        ></ion-title
+      >
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-title class="ion-text-center"
@@ -128,6 +126,3 @@ export default {
   position: absolute;
 }
 </style>
-
-function goToPage1() { throw new Error('Function not implemented.'); } function
-goToPage1() { throw new Error('Function not implemented.'); }
