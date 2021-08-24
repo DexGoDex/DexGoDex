@@ -1,7 +1,8 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <section id="header">
+    
+      <section id="header" class="ion-padding">
         <img
           src="assets/image/logo.png"
           height="24"
@@ -9,12 +10,13 @@
         />
         <p style="display:inline-block;font-weight:600;">TOS MOBILE</p>
       </section>
-      <div class="ion-text-left">
+      
+      <section class="ion-padding-horizontal">
         <h1>
           Ayo Explore <br />
           Cagar <span style="color:#088B61">Sidamukti </span>
         </h1>
-      </div>
+      </section>
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -108,11 +110,7 @@ export default {
   position: absolute;
 }
 ion-card {
-  border-radius: 50px;
-}
-#img {
-  padding: 0px;
-  width: 50px;
+  border-radius: 20px;
 }
 p {
   font-size: 14px;
