@@ -1,26 +1,18 @@
 <template>
   <ion-page>
-    <ion-header>
-      <ion-title class="ion-text-center"
-        ><strong>
-          Hai Muktikers! <br />Apa Yang Kamu <br />Ingin Lakukan Hari
-          Ini?</strong
-        ></ion-title
-      >
-    </ion-header>
     <ion-content :fullscreen="true">
-      <ion-title class="ion-text-center"
-        >Rekomendasi Wisata Untuk Kamu
-      </ion-title>
-      <ion-slides pager="true" :options="slideOpts">
-        <ion-slide>
-          <img src="assets/icon/favicon.png" />
-        </ion-slide>
-        <ion-slide>
-          <img src="assets/icon/favicon.png" />
-        </ion-slide>
-      </ion-slides>
-
+      <div id="img">
+        <img src="assets/Images/logo.png" />
+      </div>
+      <div class="ion-text-top-center-left">
+        <ion-title><strong>TOS MOBILE</strong></ion-title>
+      </div>
+      <div class="ion-text-left">
+        <p>
+          Ayo Explore <br />
+          Cagar Sidamukti
+        </p>
+      </div>
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -84,10 +76,7 @@ import {
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
-  IonSlides,
-  IonSlide,
   IonPage,
-  IonHeader,
   IonTitle,
   IonContent,
 } from "@ionic/vue";
@@ -102,20 +91,13 @@ export default {
     IonCardHeader,
     IonCardSubtitle,
     IonCardTitle,
-    IonSlides,
-    IonSlide,
-    IonHeader,
     IonTitle,
     IonContent,
     IonPage,
   },
 
   setup() {
-    const slideOpts = {
-      initialSlide: 1,
-      speed: 400,
-    };
-    return { slideOpts };
+    return {};
   },
 };
 </script>
@@ -124,5 +106,20 @@ export default {
 #center {
   align-content: center;
   position: absolute;
+}
+ion-card {
+  border-radius: 50px;
+}
+#img {
+  padding: 0px;
+  width: 50px;
+}
+p {
+  padding: 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+green {
+  color: green;
 }
 </style>
