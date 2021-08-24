@@ -1,8 +1,6 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      
-    
       <div class="ion-text-center">
         <img src="assets/image/illustration.png" />
         <p>
@@ -32,7 +30,7 @@
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonTitle, IonContent } from "@ionic/vue";
+import { IonPage, IonContent } from "@ionic/vue";
 import {
   call,
   logoInstagram,
@@ -44,10 +42,8 @@ import {
 export default {
   name: "Tab3",
   components: {
-    IonHeader,
-    IonTitle,
-    IonContent,
     IonPage,
+    IonContent,
   },
   setup() {
     return {
