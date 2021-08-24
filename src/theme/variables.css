@@ -2,7 +2,7 @@
 http://ionicframework.com/docs/theming/ */
 @font-face {
   font-family: Poppins;
-  src: url("/public/assets/fonts/Poppins-Regular.ttf"); 
+  src: asset-url("/public/assets/fonts/Poppins-Regular.ttf") format('truetype'); 
 }
 
 /** Ionic CSS Variables **/

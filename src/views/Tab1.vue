@@ -23,7 +23,7 @@
             <ion-card>
               <ion-item href="../tabs/page1" class="ion-activated">
                 <ion-card-header>
-                  <img src="assets/icon/icon.png" />
+                  <img src="assets/icon/icon.png"/>
                   <ion-card-title>Card Title</ion-card-title>
                   <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
                 </ion-card-header>
