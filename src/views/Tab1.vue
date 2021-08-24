@@ -1,16 +1,20 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-        <section id="header">
-          <img src="assets/Images/logo.png" height="24" style="margin-right:8px" /> 
-          <p style="display:inline-block;font-weight:600;">TOS MOBILE</p>
-        </section>
-        <div class="ion-text-left">
-          <h1>
+      <section id="header">
+        <img
+          src="assets/Images/logo.png"
+          height="24"
+          style="margin-right:8px"
+        />
+        <p style="display:inline-block;font-weight:600;">TOS MOBILE</p>
+      </section>
+      <div class="ion-text-left">
+        <h1>
           Ayo Explore <br />
-          Cagar Sidamukti
-          </h1>
-        </div>
+          Cagar <span style="color:#088B61">Sidamukti </span>
+        </h1>
+      </div>
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -110,13 +114,13 @@ ion-card {
   padding: 0px;
   width: 50px;
 }
-p{
+p {
   font-size: 14px;
 }
 green {
   color: green;
 }
-#header{
+#header {
   display: flex;
   align-items: center;
 }
