@@ -1,8 +1,14 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
+@font-face {
+  font-family: Poppins;
+  src: url("/public/assets/fonts/Poppins-Regular.ttf"); 
+}
 
 /** Ionic CSS Variables **/
 :root {
+  /* Fonts */
+  --ion-font-family: "Poppins";
   /** primary **/
   --ion-color-primary: #088b61;
   --ion-color-primary-rgb: 56, 128, 255;
