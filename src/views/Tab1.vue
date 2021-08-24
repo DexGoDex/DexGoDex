@@ -1,18 +1,16 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <div id="img">
-        <img src="assets/Images/logo.png" />
-      </div>
-      <div class="ion-text-top-center-left">
-        <ion-title><strong>TOS MOBILE</strong></ion-title>
-      </div>
-      <div class="ion-text-left">
-        <p>
+        <section id="header">
+          <img src="assets/Images/logo.png" height="24" style="margin-right:8px" /> 
+          <p style="display:inline-block;font-weight:600;">TOS MOBILE</p>
+        </section>
+        <div class="ion-text-left">
+          <h1>
           Ayo Explore <br />
           Cagar Sidamukti
-        </p>
-      </div>
+          </h1>
+        </div>
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -77,7 +75,6 @@ import {
   IonCardSubtitle,
   IonCardTitle,
   IonPage,
-  IonTitle,
   IonContent,
 } from "@ionic/vue";
 
@@ -91,7 +88,6 @@ export default {
     IonCardHeader,
     IonCardSubtitle,
     IonCardTitle,
-    IonTitle,
     IonContent,
     IonPage,
   },
@@ -114,12 +110,14 @@ ion-card {
   padding: 0px;
   width: 50px;
 }
-p {
-  padding: 20px;
-  font-size: 36px;
-  font-weight: bold;
+p{
+  font-size: 14px;
 }
 green {
   color: green;
+}
+#header{
+  display: flex;
+  align-items: center;
 }
 </style>
