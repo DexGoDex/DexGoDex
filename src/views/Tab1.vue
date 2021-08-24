@@ -3,7 +3,7 @@
     <ion-content :fullscreen="true">
       <section id="header">
         <img
-          src="assets/Image/logo.png"
+          src="assets/image/logo.png"
           height="24"
           style="margin-right:8px"
         />
