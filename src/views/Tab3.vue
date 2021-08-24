@@ -3,6 +3,8 @@
     <ion-content :fullscreen="true">
       <div class="ion-text-center">
         <img src="assets/image/illustration.png" />
+      </div>
+      <div class="ion-text-center">
         <p>
           Untuk melakukan reservasi,<br />
           hubungi kontak dibawah ini
