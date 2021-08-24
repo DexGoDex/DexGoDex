@@ -1,16 +1,8 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title class="ion-text-center">
-            Untuk melakukan reservasi, hubungi kontak dibawah ini</ion-title
-          >
-        </ion-toolbar>
-      </ion-header>
-      <br />
-      <br />
-      <br />
+      
+    
       <div class="ion-text-center">
         <img src="assets/image/illustration.png" />
         <p>
