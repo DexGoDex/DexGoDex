@@ -12,7 +12,7 @@
       <br />
       <br />
       <div class="ion-text-center">
-        <img src="/assets/images/illustration.png" />
+        <img src="/assets/image/illustration.png" />
         <p>
           Untuk melakukan reservasi,<br />
           hubungi kontak dibawah ini
