@@ -3,13 +3,15 @@
     <ion-content :fullscreen="true">
       <section id="header" class="ion-padding">
         <img src="assets/img/logo.png" height="24" style="margin-right:8px" />
-        <p style="display:inline-block;font-weight:600;">TOS MOBILE</p>
+        <p style="display:inline-block;font-weight:600;">TOS Mobile</p>
       </section>
 
       <section class="ion-padding-horizontal">
         <h1>
-          Ayo Explore <br />
-          Cagar <span style="color:#088B61">Sidamukti </span>
+          <strong>
+            Ayo explore <br />
+            cagar <span style="color:#088B61">Sidamukti </span>
+          </strong>
         </h1>
       </section>
       <ion-grid>
@@ -114,6 +116,7 @@ ion-card {
 }
 p {
   font-size: 14px;
+  color: #088b61;
 }
 green {
   color: green;
@@ -121,5 +124,8 @@ green {
 #header {
   display: flex;
   align-items: center;
+}
+ion-icon {
+  color: #427aa1;
 }
 </style>
