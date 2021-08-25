@@ -2,7 +2,7 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <div class="ion-text-center">
-        <ion-img src="assets/icon/illustration.png"> </ion-img>
+        <ion-img src="assets/icon/Illustration.png"> </ion-img>
       </div>
       <div class="ion-text-center">
         <p>
