@@ -12,7 +12,7 @@
           </p>
         </div>
         <div class="ion-text-center">
-          <ion-button>
+          <ion-button href="https://wa.me/6285810443581">
             <ion-icon :icon="call" style="margin-right:10px" />
             <ion-label><b>Reservasi</b></ion-label>
           </ion-button>
