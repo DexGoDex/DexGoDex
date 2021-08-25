@@ -2,7 +2,7 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <section id="header" class="ion-padding">
-        <img src="assets/icon/logo.png" height="24" style="margin-right:8px" />
+        <img src="assets/img/logo.png" height="24" style="margin-right:8px" />
         <p style="display:inline-block;font-weight:600;">TOS MOBILE</p>
       </section>
 
