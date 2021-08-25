@@ -17,12 +17,11 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-item href="../tabs/page2" class="ion-activated">
-                <ion-card>
-                  <ion-thumbnail>
-                    <ion-img src="assets/img/photo.png">
-                    </ion-img>
-                  </ion-thumbnail>
+            <ion-item href="../tabs/page1" class="ion-activated">
+              <ion-card>
+                <ion-thumbnail>
+                  <ion-img src="assets/img/photo.png"> </ion-img>
+                </ion-thumbnail>
                 <ion-card-header>
                   <ion-card-title><strong>Card Title</strong></ion-card-title>
                   <ion-icon :icon="navigate"></ion-icon>
@@ -33,11 +32,10 @@
           </ion-col>
           <ion-col>
             <ion-item href="../tabs/page2" class="ion-activated">
-                <ion-card>
-                  <ion-thumbnail>
-                    <ion-img src="assets/img/photo.png">
-                    </ion-img>
-                  </ion-thumbnail>
+              <ion-card>
+                <ion-thumbnail>
+                  <ion-img src="assets/img/photo.png"> </ion-img>
+                </ion-thumbnail>
                 <ion-card-header>
                   <ion-card-title><strong>Card Title</strong></ion-card-title>
                   <ion-icon :icon="navigate"></ion-icon>
@@ -49,28 +47,32 @@
         </ion-row>
         <ion-row>
           <ion-col>
-            <ion-card>
-              <ion-item href="#" class="ion-activated">
+            <ion-item href="../tabs/page1" class="ion-activated">
+              <ion-card>
+                <ion-thumbnail>
+                  <ion-img src="assets/img/photo.png"> </ion-img>
+                </ion-thumbnail>
                 <ion-card-header>
-                  <img src="assets/img/photo.png" />
                   <ion-card-title><strong>Card Title</strong></ion-card-title>
                   <ion-icon :icon="navigate"></ion-icon>
                   <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
-              </ion-item>
-            </ion-card>
+              </ion-card>
+            </ion-item>
           </ion-col>
           <ion-col>
-            <ion-card>
-              <ion-item href="#" class="ion-activated">
+            <ion-item href="../tabs/page2" class="ion-activated">
+              <ion-card>
+                <ion-thumbnail>
+                  <ion-img src="assets/img/photo.png"> </ion-img>
+                </ion-thumbnail>
                 <ion-card-header>
-                  <img src="assets/img/photo.png" />
                   <ion-card-title><strong>Card Title</strong></ion-card-title>
                   <ion-icon :icon="navigate"></ion-icon>
                   <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
-              </ion-item>
-            </ion-card>
+              </ion-card>
+            </ion-item>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -131,17 +133,17 @@ ion-icon {
   color: #427aa1;
 }
 
-ion-thumbnail{
+ion-thumbnail {
   --size: 100%;
 }
 
-ion-item{
+ion-item {
   --padding-bottom: none;
-  --padding-top:	none;
-  --padding-start: none	;
-  --padding-end:	none;
-  --inner-padding-end:none;
-  --inner-padding-start:none;	
-  --border-color	: transparent;
+  --padding-top: none;
+  --padding-start: none;
+  --padding-end: none;
+  --inner-padding-end: none;
+  --inner-padding-start: none;
+  --border-color: transparent;
 }
 </style>
