@@ -18,9 +18,10 @@
             <ion-card>
               <ion-item href="../tabs/page1" class="ion-activated">
                 <ion-card-header>
-                  <img src="assets/icon/icon.png" />
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                  <img src="assets/img/photo.png" />
+                  <ion-card-title><strong>Card Title</strong></ion-card-title>
+                  <ion-icon :icon="navigate"></ion-icon>
+                  <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
               </ion-item>
             </ion-card>
@@ -29,9 +30,10 @@
             <ion-card>
               <ion-item href="../tabs/page2" class="ion-activated">
                 <ion-card-header>
-                  <img src="assets/icon/icon.png" />
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                  <img src="assets/img/photo.png" />
+                  <ion-card-title><strong>Card Title</strong></ion-card-title>
+                  <ion-icon :icon="navigate"></ion-icon>
+                  <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
               </ion-item>
             </ion-card>
@@ -42,9 +44,10 @@
             <ion-card>
               <ion-item href="#" class="ion-activated">
                 <ion-card-header>
-                  <img src="assets/icon/icon.png" />
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                  <img src="assets/img/photo.png" />
+                  <ion-card-title><strong>Card Title</strong></ion-card-title>
+                  <ion-icon :icon="navigate"></ion-icon>
+                  <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
               </ion-item>
             </ion-card>
@@ -53,9 +56,10 @@
             <ion-card>
               <ion-item href="#" class="ion-activated">
                 <ion-card-header>
-                  <img src="assets/icon/icon.png" />
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                  <img src="assets/img/photo.png" />
+                  <ion-card-title><strong>Card Title</strong></ion-card-title>
+                  <ion-icon :icon="navigate"></ion-icon>
+                  <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
               </ion-item>
             </ion-card>
@@ -78,6 +82,7 @@ import {
   IonPage,
   IonContent,
 } from "@ionic/vue";
+import { navigate } from "ionicons/icons";
 
 export default {
   name: "Tab1",
@@ -94,7 +99,7 @@ export default {
   },
 
   setup() {
-    return {};
+    return { navigate };
   },
 };
 </script>
