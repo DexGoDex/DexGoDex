@@ -32,16 +32,19 @@
             </ion-item>
           </ion-col>
           <ion-col>
-            <ion-card>
-              <ion-item href="../tabs/page2" class="ion-activated">
+            <ion-item href="../tabs/page2" class="ion-activated">
+                <ion-card>
+                  <ion-thumbnail>
+                    <ion-img src="assets/img/photo.png">
+                    </ion-img>
+                  </ion-thumbnail>
                 <ion-card-header>
-                  <img src="assets/img/photo.png" />
                   <ion-card-title><strong>Card Title</strong></ion-card-title>
                   <ion-icon :icon="navigate"></ion-icon>
                   <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
-              </ion-item>
-            </ion-card>
+              </ion-card>
+            </ion-item>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -133,9 +136,12 @@ ion-thumbnail{
 }
 
 ion-item{
-  --inner-padding-bottom:0	;
-  --inner-padding-top:	0;
-  --inner-padding-left:0	;
-  --inner-padding-right:	0;
+  --padding-bottom: none;
+  --padding-top:	none;
+  --padding-start: none	;
+  --padding-end:	none;
+  --inner-padding-end:none;
+  --inner-padding-start:none;	
+  --border-color	: transparent;
 }
 </style>
