@@ -3,7 +3,7 @@
     <ion-content :fullscreen="true">
       <section>
         <div class="ion-text-center">
-          <img src="assets/img/Illustration.png"> 
+          <img src="assets/img/Illustration.png" />
         </div>
         <div class="ion-text-center">
           <p>
@@ -12,13 +12,15 @@
           </p>
         </div>
         <div class="ion-text-center">
-          <ion-button >
+          <ion-button>
             <ion-icon :icon="call" style="margin-right:10px" />
             <ion-label><b>Reservasi</b></ion-label>
           </ion-button>
         </div>
-        <div class="ion-text-center"  style="margin-bottom: 25px">
-          <small style="color:rgba(58,58,58,40%)">Selain yg ada diaplikasi ini, semuanya penipuan</small>
+        <div class="ion-text-center" style="margin-bottom: 25px">
+          <small style="color:rgba(58,58,58,40%)"
+            >Selain yg ada diaplikasi ini, semuanya penipuan</small
+          >
         </div>
         <div class="ion-text-center" id="social-media">
           <p>
@@ -29,7 +31,6 @@
           <ion-icon :icon="logoFacebook"></ion-icon>
         </div>
       </section>
-      
     </ion-content>
   </ion-page>
 </template>
@@ -62,7 +63,7 @@ export default {
 };
 </script>
 <style>
-section{
+section {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -72,14 +73,14 @@ section{
 ion-img {
   width: 50%;
 }
-#social-media ion-icon{
+#social-media ion-icon {
   margin: 0 10px;
   font-size: 24px;
-  color: #088b61;
+  color: #427aa1;
 }
-ion-button{
+ion-button {
   height: 60px;
   width: 300px;
-  --border-radius	: 16px;
+  --border-radius: 16px;
 }
 </style>
