@@ -1,16 +1,11 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-    
       <section id="header" class="ion-padding">
-        <img
-          src="assets/image/logo.png"
-          height="24"
-          style="margin-right:8px"
-        />
+        <img src="assets/icon/logo.png" height="24" style="margin-right:8px" />
         <p style="display:inline-block;font-weight:600;">TOS MOBILE</p>
       </section>
-      
+
       <section class="ion-padding-horizontal">
         <h1>
           Ayo Explore <br />
@@ -23,7 +18,7 @@
             <ion-card>
               <ion-item href="../tabs/page1" class="ion-activated">
                 <ion-card-header>
-                  <img src="assets/icon/icon.png"/>
+                  <img src="assets/icon/icon.png" />
                   <ion-card-title>Card Title</ion-card-title>
                   <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
                 </ion-card-header>
