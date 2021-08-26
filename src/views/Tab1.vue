@@ -16,62 +16,50 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-item href="../tabs/page1" class="ion-activated">
-              <ion-card>
-                <ion-thumbnail>
-                  <ion-img src="assets/img/photo.png"> </ion-img>
-                </ion-thumbnail>
-                <ion-card-header>
-                  <ion-card-title><strong>Card Title</strong></ion-card-title>
-                  <ion-icon :icon="navigate"></ion-icon>Barat
-                  <ion-card-subtitle>sub title</ion-card-subtitle>
-                </ion-card-header>
-              </ion-card>
-            </ion-item>
+            <ion-card href="../tabs/page1">
+              <ion-thumbnail>
+                <ion-img src="assets/img/photo.png"> </ion-img>
+              </ion-thumbnail>
+              <ion-card-header>
+                <ion-card-title><strong>Card Title</strong></ion-card-title>
+                  <ion-card-subtitle><ion-icon :icon="navigate"></ion-icon> Barat</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
           </ion-col>
           <ion-col>
-            <ion-item href="../tabs/page2" class="ion-activated">
-              <ion-card>
-                <ion-thumbnail>
-                  <ion-img src="assets/img/paralayang.png"> </ion-img>
-                </ion-thumbnail>
-                <ion-card-header>
-                  <ion-card-title><strong>Card Title</strong></ion-card-title>
-                  <ion-icon :icon="navigate"></ion-icon> Barat
-                  <ion-card-subtitle>sub title</ion-card-subtitle>
-                </ion-card-header>
-              </ion-card>
-            </ion-item>
+            <ion-card href="../tabs/page2">
+              <ion-thumbnail>
+                <ion-img src="assets/img/paralayang.png"> </ion-img>
+              </ion-thumbnail>
+              <ion-card-header>
+                <ion-card-title><strong>Card Title</strong></ion-card-title>
+               <ion-card-subtitle><ion-icon :icon="navigate"></ion-icon> Barat</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-            <ion-item href="../tabs/page1" class="ion-activated">
-              <ion-card>
+              <ion-card href="../tabs/page1">
                 <ion-thumbnail>
                   <ion-img src="assets/img/paralayang.png"> </ion-img>
                 </ion-thumbnail>
                 <ion-card-header>
                   <ion-card-title><strong>Card Title</strong></ion-card-title>
-                  <ion-icon :icon="navigate"></ion-icon> Barat
-                  <ion-card-subtitle>sub title</ion-card-subtitle>
+                  <ion-card-subtitle><ion-icon :icon="navigate"></ion-icon> Barat</ion-card-subtitle>
                 </ion-card-header>
               </ion-card>
-            </ion-item>
           </ion-col>
-          <ion-col>
-            <ion-item href="../tabs/page2" class="ion-activated">
-              <ion-card>
-                <ion-thumbnail>
-                  <ion-img src="assets/img/photo.png"> </ion-img>
-                </ion-thumbnail>
-                <ion-card-header>
-                  <ion-card-title><strong>Card Title</strong></ion-card-title>
-                  <ion-icon :icon="navigate"></ion-icon> Barat
-                  <ion-card-subtitle>sub title</ion-card-subtitle>
-                </ion-card-header>
-              </ion-card>
-            </ion-item>
+          <ion-col>  
+            <ion-card href="../tabs/page2">
+              <ion-thumbnail>
+                <ion-img src="assets/img/content-video.png"> </ion-img>
+              </ion-thumbnail>
+              <ion-card-header>
+                <ion-card-title><strong>Card Title</strong></ion-card-title>
+                <ion-card-subtitle><ion-icon :icon="navigate"></ion-icon> Barat</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -117,6 +105,10 @@ export default {
 ion-card {
   border-radius: 20px;
 }
+ion-card-title{
+  margin-bottom: 5px;
+}
+
 p {
   font-size: 14px;
   color: #088b61;
@@ -126,21 +118,13 @@ p {
   display: flex;
   align-items: center;
 }
-ion-icon {
+ion-icon, ion-card-subtitle {
   color: #427aa1;
 }
 
 ion-thumbnail {
   --size: 100%;
+  
 }
 
-ion-item {
-  --padding-bottom: none;
-  --padding-top: none;
-  --padding-start: none;
-  --padding-end: none;
-  --inner-padding-end: none;
-  --inner-padding-start: none;
-  --border-color: transparent;
-}
 </style>

@@ -62,7 +62,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 section {
   height: 100%;
   display: flex;
@@ -70,8 +70,8 @@ section {
   justify-content: center;
   align-items: center;
 }
-ion-img {
-  width: 50%;
+img {
+  width: 180px;
 }
 #social-media ion-icon {
   margin: 0 10px;
