@@ -30,6 +30,14 @@ const routes: Array<RouteRecordRaw> = [
         path: 'page2',
         component: () => import('@/views/page2.vue')
       },
+      {
+        path: 'page3',
+        component: () => import('@/views/page3.vue')
+      },
+      {
+        path: 'page4',
+        component: () => import('@/views/page3.vue')
+      },
     ]
   },
 ]

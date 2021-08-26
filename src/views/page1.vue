@@ -10,10 +10,10 @@
 
     <ion-content :fullscreen="true">
       <section>
-          <iframe
+        <iframe
           width="100%"
           height="315"
-          src="https://www.youtube.com/embed/FCsVykBuT6c"
+          src="assets/video/comingsoon.mp4"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -22,7 +22,7 @@
       </section>
       <section class="ion-padding-horizontal">
         <h2>Judul</h2>
-        <ion-text><ion-icon :icon="navigate"></ion-icon>Barat</ion-text>
+        <ion-text><ion-icon :icon="navigate"></ion-icon> Barat</ion-text>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Deskripsi</h5>
@@ -39,6 +39,9 @@
             <div class="swiper-zoom-container">
               <img src="assets/img/content-video.png" />
             </div>
+          </ion-slide>
+          <ion-slide>
+            <img src="assets/img/content-video.png" />
           </ion-slide>
           <ion-slide>
             <img src="assets/img/content-video.png" />
@@ -106,7 +109,7 @@ export default defineComponent({
       slidesPerView: 1.5,
       spaceBetween: 15,
       ionSlideTap: () => {
-        console.log("hello wibu");
+        console.log("hello");
       },
     };
     return {
