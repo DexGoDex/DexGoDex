@@ -5,7 +5,6 @@
         <img src="assets/img/logo.png" height="24" style="margin-right:8px" />
         <p style="display:inline-block;font-weight:600;">TOS Mobile</p>
       </section>
-
       <section class="ion-padding-horizontal">
         <h1>
           <strong>
@@ -24,7 +23,7 @@
                 </ion-thumbnail>
                 <ion-card-header>
                   <ion-card-title><strong>Card Title</strong></ion-card-title>
-                  <ion-icon :icon="navigate"></ion-icon>
+                  <ion-icon :icon="navigate"></ion-icon>Barat
                   <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
               </ion-card>
@@ -34,11 +33,11 @@
             <ion-item href="../tabs/page2" class="ion-activated">
               <ion-card>
                 <ion-thumbnail>
-                  <ion-img src="assets/img/photo.png"> </ion-img>
+                  <ion-img src="assets/img/paralayang.png"> </ion-img>
                 </ion-thumbnail>
                 <ion-card-header>
                   <ion-card-title><strong>Card Title</strong></ion-card-title>
-                  <ion-icon :icon="navigate"></ion-icon>
+                  <ion-icon :icon="navigate"></ion-icon> Barat
                   <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
               </ion-card>
@@ -50,11 +49,11 @@
             <ion-item href="../tabs/page1" class="ion-activated">
               <ion-card>
                 <ion-thumbnail>
-                  <ion-img src="assets/img/photo.png"> </ion-img>
+                  <ion-img src="assets/img/paralayang.png"> </ion-img>
                 </ion-thumbnail>
                 <ion-card-header>
                   <ion-card-title><strong>Card Title</strong></ion-card-title>
-                  <ion-icon :icon="navigate"></ion-icon>
+                  <ion-icon :icon="navigate"></ion-icon> Barat
                   <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
               </ion-card>
@@ -68,7 +67,7 @@
                 </ion-thumbnail>
                 <ion-card-header>
                   <ion-card-title><strong>Card Title</strong></ion-card-title>
-                  <ion-icon :icon="navigate"></ion-icon>
+                  <ion-icon :icon="navigate"></ion-icon> Barat
                   <ion-card-subtitle>sub title</ion-card-subtitle>
                 </ion-card-header>
               </ion-card>
@@ -122,9 +121,7 @@ p {
   font-size: 14px;
   color: #088b61;
 }
-green {
-  color: green;
-}
+
 #header {
   display: flex;
   align-items: center;
