@@ -62,7 +62,7 @@
           <ion-col>
             <ion-card href="../tabs/page2">
               <ion-thumbnail>
-                <ion-img src="assets/img/content-video.png"> </ion-img>
+                <ion-img src="assets/img/photo.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
                 <ion-card-title>Card Title</ion-card-title>
