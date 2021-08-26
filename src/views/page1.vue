@@ -1,8 +1,10 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Back</ion-title>
+      <ion-toolbar> 
+        <ion-buttons slot="start">
+          <ion-back-button default-href="/tabs/tab1"></ion-back-button>
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
 
@@ -71,8 +73,9 @@ import {
   IonContent,
   IonHeader,
   IonPage,
-  IonTitle,
   IonToolbar,
+  IonButtons,
+  IonBackButton,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 import { navigate, call } from "ionicons/icons";
@@ -85,8 +88,9 @@ export default defineComponent({
     IonContent,
     IonHeader,
     IonPage,
-    IonTitle,
     IonToolbar,
+    IonButtons,
+    IonBackButton,
   },
   setup() {
     const slideOpts = {
