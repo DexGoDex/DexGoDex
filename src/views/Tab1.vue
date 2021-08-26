@@ -16,7 +16,7 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-card href="../tabs/page1">
+            <ion-card href="../page">
               <ion-thumbnail>
                 <ion-img src="assets/img/photo.png"> </ion-img>
               </ion-thumbnail>
