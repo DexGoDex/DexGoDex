@@ -10,8 +10,8 @@
 
     <ion-content :fullscreen="true">
       <section>
-        <iframe
-          width="560"
+          <iframe
+          width="100%"
           height="315"
           src="https://www.youtube.com/embed/FCsVykBuT6c"
           title="YouTube video player"
