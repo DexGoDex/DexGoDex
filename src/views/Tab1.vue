@@ -16,7 +16,7 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-card href="../page">
+            <ion-card href="../page1">
               <ion-thumbnail>
                 <ion-img src="assets/img/photo.png"> </ion-img>
               </ion-thumbnail>
@@ -30,7 +30,7 @@
             </ion-card>
           </ion-col>
           <ion-col>
-            <ion-card href="../tabs/page2">
+            <ion-card href="../page2">
               <ion-thumbnail>
                 <ion-img src="assets/img/paralayang.png"> </ion-img>
               </ion-thumbnail>
@@ -46,7 +46,7 @@
         </ion-row>
         <ion-row>
           <ion-col>
-            <ion-card href="../tabs/page3">
+            <ion-card href="../page3">
               <ion-thumbnail>
                 <ion-img src="assets/img/paralayang.png"> </ion-img>
               </ion-thumbnail>
@@ -60,7 +60,7 @@
             </ion-card>
           </ion-col>
           <ion-col>
-            <ion-card href="../tabs/page4">
+            <ion-card href="../page4">
               <ion-thumbnail>
                 <ion-img src="assets/img/photo.png"> </ion-img>
               </ion-thumbnail>
