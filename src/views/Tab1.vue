@@ -5,7 +5,7 @@
         <img src="assets/img/logo.png" height="24" style="margin-right:8px" />
         <p style="display:inline-block;font-weight:600;">TOS Mobile</p>
       </section>
-      <section class="ion-padding-horizontal">
+      <section id="subheader" class="ion-padding-horizontal">
         <h1>
           <strong>
             Ayo explore <br />
@@ -117,11 +117,11 @@ export default {
 ion-card {
   border-radius: 20px;
 }
-ion-col:nth-child(even){
-  margin-top: 10px;
+ion-col:nth-child(even) {
+  margin-top: 25px;
 }
-ion-col:nth-child(even){
-  margin-top: -10px;
+ion-col:nth-child(even) {
+  margin-top: -25px;
 }
 ion-card-title {
   margin-bottom: 5px;
@@ -145,5 +145,8 @@ ion-card-subtitle {
 
 ion-thumbnail {
   --size: 100%;
+}
+#subheader {
+  margin-bottom: 25px;
 }
 </style>
