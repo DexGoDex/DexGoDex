@@ -117,6 +117,12 @@ export default {
 ion-card {
   border-radius: 20px;
 }
+ion-col:nth-child(even){
+  margin-top: 10px;
+}
+ion-col:nth-child(even){
+  margin-top: -10px;
+}
 ion-card-title {
   margin-bottom: 5px;
   font-size: 120%;
