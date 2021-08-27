@@ -119,6 +119,8 @@ ion-card {
 }
 ion-card-title {
   margin-bottom: 5px;
+  font-size: 120%;
+  font-weight: bold;
 }
 
 p {
@@ -137,9 +139,5 @@ ion-card-subtitle {
 
 ion-thumbnail {
   --size: 100%;
-}
-ion-card-title {
-  font-size: 120%;
-  font-weight: bold;
 }
 </style>
