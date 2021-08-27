@@ -29,7 +29,8 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, nulla
           in lobortis consequat fames. Aliquam sed vestibulum, aenean feugiat
-          pretium amet <span style="color:#088B61">selengkapnya</span>
+          pretium amet
+          <button><span style="color:#088B61">selengkapnya</span></button>
         </p>
       </section>
       <section class="ion-padding-horizontal">
