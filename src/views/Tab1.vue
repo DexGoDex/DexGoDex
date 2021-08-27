@@ -35,7 +35,7 @@
                 <ion-img src="assets/img/paralayang.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
-                <ion-card-title>Paralayang</ion-card-title>
+                <ion-card-title>Paralayang </ion-card-title>
                 <ion-card-subtitle
                   ><ion-icon :icon="navigate"></ion-icon>
                   Barat</ion-card-subtitle
