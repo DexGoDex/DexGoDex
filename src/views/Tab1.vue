@@ -18,10 +18,10 @@
           <ion-col>
             <ion-card href="../page1">
               <ion-thumbnail>
-                <ion-img src="assets/img/photo.png"> </ion-img>
+                <ion-img src="assets/img/sirkuit.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
-                <ion-card-title>Gunung Punten</ion-card-title>
+                <ion-card-title> Sirkuit Cibatu</ion-card-title>
                 <ion-card-subtitle
                   ><ion-icon :icon="navigate"></ion-icon>
                   Barat</ion-card-subtitle
@@ -48,10 +48,10 @@
           <ion-col>
             <ion-card href="../page3">
               <ion-thumbnail>
-                <ion-img src="assets/img/paralayang.png"> </ion-img>
+                <ion-img src="assets/img/karang.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
-                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-title>Gunung Karang</ion-card-title>
                 <ion-card-subtitle
                   ><ion-icon :icon="navigate"></ion-icon>
                   Barat</ion-card-subtitle
@@ -62,10 +62,56 @@
           <ion-col>
             <ion-card href="../page4">
               <ion-thumbnail>
-                <ion-img src="assets/img/photo.png"> </ion-img>
+                <ion-img src="assets/img/seni.png"> </ion-img>
+              </ion-thumbnail>
+              <ion-card-header>
+                <ion-card-title>Sanggar Seni</ion-card-title>
+                <ion-card-subtitle
+                  ><ion-icon :icon="navigate"></ion-icon>
+                  Barat</ion-card-subtitle
+                >
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-card href="../page5">
+              <ion-thumbnail>
+                <ion-img src="assets/img/panten.png"> </ion-img>
+              </ion-thumbnail>
+              <ion-card-header>
+                <ion-card-title>Gunung Panten</ion-card-title>
+                <ion-card-subtitle
+                  ><ion-icon :icon="navigate"></ion-icon>
+                  Barat</ion-card-subtitle
+                >
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card href="../page6">
+              <ion-thumbnail>
+                <ion-img src="assets/icon/icon.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
                 <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle
+                  ><ion-icon :icon="navigate"></ion-icon>
+                  Barat</ion-card-subtitle
+                >
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="auto">
+            <ion-card href="../page7">
+              <ion-thumbnail>
+                <ion-img src="assets/img/panten.png"> </ion-img>
+              </ion-thumbnail>
+              <ion-card-header>
+                <ion-card-title>Arum Jeram</ion-card-title>
                 <ion-card-subtitle
                   ><ion-icon :icon="navigate"></ion-icon>
                   Barat</ion-card-subtitle
@@ -118,10 +164,10 @@ ion-card {
   border-radius: 20px;
 }
 ion-col:nth-child(even) {
-  margin-top: 25px;
+  margin-top: -25px;
 }
 ion-col:nth-child(even) {
-  margin-top: -25px;
+  margin-top: 30px;
 }
 ion-card-title {
   margin-bottom: 5px;

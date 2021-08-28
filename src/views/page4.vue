@@ -22,17 +22,17 @@
       </section>
       <section class="ion-padding-horizontal">
         <h2>Judul</h2>
-        <ion-text><ion-icon :icon="navigate"></ion-icon>Barat</ion-text>
+        <ion-text><ion-icon :icon="navigate"></ion-icon> Barat</ion-text>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Deskripsi</h5>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, nulla
           in lobortis consequat fames. Aliquam sed vestibulum, aenean feugiat
-          pretium amet <span style="color:#088B61">selengkapnya</span>
+          pretium amet
+          <button><span style="color:#088B61">selengkapnya</span></button>
         </p>
       </section>
-
       <section class="ion-padding-horizontal">
         <h5>Galeri</h5>
         <ion-slides :options="slideOpts" zoom>
@@ -40,6 +40,9 @@
             <div class="swiper-zoom-container">
               <img src="assets/img/content-video.png" />
             </div>
+          </ion-slide>
+          <ion-slide>
+            <img src="assets/img/content-video.png" />
           </ion-slide>
           <ion-slide>
             <img src="assets/img/content-video.png" />
@@ -67,7 +70,7 @@
             href="/tabs/tab3"
           >
             <ion-icon :icon="call" style="margin-right:10px" />
-            <ion-label>Reservasi</ion-label>
+            <ion-label>Contact</ion-label>
           </ion-button>
         </div>
       </section>
@@ -107,7 +110,7 @@ export default defineComponent({
       slidesPerView: 1.5,
       spaceBetween: 15,
       ionSlideTap: () => {
-        console.log("hello wibu");
+        console.log("hello");
       },
     };
     return {
@@ -133,5 +136,8 @@ ion-slide img {
 
 ion-slides {
   height: 80%;
+}
+ion-label {
+  font-size: 14px;
 }
 </style>

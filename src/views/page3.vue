@@ -13,7 +13,7 @@
         <iframe
           width="100%"
           height="315"
-          src="assets/video/comingsoon.mp4"
+          src="https://www.youtube.com/embed/FCsVykBuT6c"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -29,7 +29,8 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, nulla
           in lobortis consequat fames. Aliquam sed vestibulum, aenean feugiat
-          pretium amet <span style="color:#088B61">selengkapnya</span>
+          pretium amet
+          <button><span style="color:#088B61">selengkapnya</span></button>
         </p>
       </section>
       <section class="ion-padding-horizontal">
@@ -69,7 +70,7 @@
             href="/tabs/tab3"
           >
             <ion-icon :icon="call" style="margin-right:10px" />
-            <ion-label>Reservasi</ion-label>
+            <ion-label>Contact</ion-label>
           </ion-button>
         </div>
       </section>
@@ -135,5 +136,8 @@ ion-slide img {
 
 ion-slides {
   height: 80%;
+}
+ion-label {
+  font-size: 14px;
 }
 </style>

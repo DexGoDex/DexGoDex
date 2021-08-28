@@ -14,7 +14,7 @@
         <div class="ion-text-center">
           <ion-button href="https://wa.me/6285810443581">
             <ion-icon :icon="call" style="margin-right:10px" />
-            <ion-label><b>Reservasi</b></ion-label>
+            <ion-label><b>Contact</b></ion-label>
           </ion-button>
         </div>
         <div class="ion-text-center" style="margin-bottom: 25px">

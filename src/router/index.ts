@@ -23,6 +23,18 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/page4.vue')
   },
   {
+    path: '/page5',
+    component: () => import('@/views/page5.vue')
+  },
+  {
+    path: '/page6',
+    component: () => import('@/views/page6.vue')
+  },
+  {
+    path: '/page7',
+    component: () => import('@/views/page7.vue')
+  },
+  {
     path: '/tabs/',
     component: Tabs,
     children: [

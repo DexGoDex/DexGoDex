@@ -15,7 +15,7 @@
 
         <ion-tab-button tab="tab3" href="/tabs/tab3">
           <ion-icon :icon="call" />
-          <ion-label>Reservation</ion-label>
+          <ion-label>Contact</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
