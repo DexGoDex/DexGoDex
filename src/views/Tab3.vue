@@ -7,7 +7,7 @@
         </div>
         <div class="ion-text-center">
           <p>
-            Untuk melakukan reservasi,<br />
+            Untuk informasi lebih lanjut,<br />
             hubungi kontak dibawah ini
           </p>
         </div>

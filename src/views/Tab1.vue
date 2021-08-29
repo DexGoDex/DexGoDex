@@ -95,7 +95,7 @@
                 <ion-img src="assets/icon/icon.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
-                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-title>Pasar Wisata</ion-card-title>
                 <ion-card-subtitle
                   ><ion-icon :icon="navigate"></ion-icon>
                   Barat</ion-card-subtitle
@@ -105,7 +105,8 @@
           </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col size="auto">
+          <ion-col> </ion-col>
+          <ion-col>
             <ion-card href="../page7">
               <ion-thumbnail>
                 <ion-img src="assets/img/panten.png"> </ion-img>
@@ -164,10 +165,10 @@ ion-card {
   border-radius: 20px;
 }
 ion-col:nth-child(even) {
-  margin-top: -25px;
+  margin-top: 25px;
 }
 ion-col:nth-child(even) {
-  margin-top: 30px;
+  margin-top: -25px;
 }
 ion-card-title {
   margin-bottom: 5px;
