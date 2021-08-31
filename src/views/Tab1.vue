@@ -13,6 +13,35 @@
           </strong>
         </h1>
       </section>
+      <section class="ion-padding-horizontal">
+        <ion-slides :options="slideOpts">
+          <ion-slide>
+            <div>
+              <iframe
+                width="100%"
+                height="180"
+                src="https://www.youtube.com/embed/6y5XjmhbiLY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <iframe
+              width="80%"
+              height="180"
+              src="https://www.youtube.com/embed/wSmy_jd4TeU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </ion-slide>
+        </ion-slides>
+        <br />
+      </section>
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -23,8 +52,8 @@
               <ion-card-header>
                 <ion-card-title> Sirkuit Cibatu</ion-card-title>
                 <ion-card-subtitle
-                  ><ion-icon :icon="navigate"></ion-icon>
-                  Barat</ion-card-subtitle
+                  ><ion-icon :icon="location"></ion-icon>
+                  Majalengka</ion-card-subtitle
                 >
               </ion-card-header>
             </ion-card>
@@ -37,8 +66,8 @@
               <ion-card-header>
                 <ion-card-title>Paralayang </ion-card-title>
                 <ion-card-subtitle
-                  ><ion-icon :icon="navigate"></ion-icon>
-                  Barat</ion-card-subtitle
+                  ><ion-icon :icon="location"></ion-icon>
+                  Majalengka</ion-card-subtitle
                 >
               </ion-card-header>
             </ion-card>
@@ -53,8 +82,8 @@
               <ion-card-header>
                 <ion-card-title>Gunung Karang</ion-card-title>
                 <ion-card-subtitle
-                  ><ion-icon :icon="navigate"></ion-icon>
-                  Barat</ion-card-subtitle
+                  ><ion-icon :icon="location"></ion-icon>
+                  Majalengka</ion-card-subtitle
                 >
               </ion-card-header>
             </ion-card>
@@ -67,8 +96,8 @@
               <ion-card-header>
                 <ion-card-title>Sanggar Seni</ion-card-title>
                 <ion-card-subtitle
-                  ><ion-icon :icon="navigate"></ion-icon>
-                  Barat</ion-card-subtitle
+                  ><ion-icon :icon="location"></ion-icon>
+                  Majalengka</ion-card-subtitle
                 >
               </ion-card-header>
             </ion-card>
@@ -83,8 +112,8 @@
               <ion-card-header>
                 <ion-card-title>Gunung Panten</ion-card-title>
                 <ion-card-subtitle
-                  ><ion-icon :icon="navigate"></ion-icon>
-                  Barat</ion-card-subtitle
+                  ><ion-icon :icon="location"></ion-icon>
+                  Majalengka</ion-card-subtitle
                 >
               </ion-card-header>
             </ion-card>
@@ -92,13 +121,13 @@
           <ion-col>
             <ion-card href="../page6">
               <ion-thumbnail>
-                <ion-img src="assets/icon/icon.png"> </ion-img>
+                <ion-img src="assets/img/pasar.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
                 <ion-card-title>Pasar Wisata</ion-card-title>
                 <ion-card-subtitle
-                  ><ion-icon :icon="navigate"></ion-icon>
-                  Barat</ion-card-subtitle
+                  ><ion-icon :icon="location"></ion-icon>
+                  Majalengka</ion-card-subtitle
                 >
               </ion-card-header>
             </ion-card>
@@ -109,16 +138,17 @@
           <ion-col>
             <ion-card href="../page7">
               <ion-thumbnail>
-                <ion-img src="assets/img/panten.png"> </ion-img>
+                <ion-img src="assets/img/arumjeram.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
                 <ion-card-title>Arum Jeram</ion-card-title>
                 <ion-card-subtitle
-                  ><ion-icon :icon="navigate"></ion-icon>
-                  Barat</ion-card-subtitle
+                  ><ion-icon :icon="location"></ion-icon>
+                  Majalengka</ion-card-subtitle
                 >
               </ion-card-header>
             </ion-card>
+            `
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -138,7 +168,7 @@ import {
   IonPage,
   IonContent,
 } from "@ionic/vue";
-import { navigate } from "ionicons/icons";
+import { location } from "ionicons/icons";
 
 export default {
   name: "Tab1",
@@ -155,7 +185,15 @@ export default {
   },
 
   setup() {
-    return { navigate };
+    const slideOpts = {
+      speed: 400,
+      slidesPerView: 1.5,
+      spaceBetween: 15,
+      ionSlideTap: () => {
+        console.log("hello");
+      },
+    };
+    return { location };
   },
 };
 </script>
@@ -195,5 +233,8 @@ ion-thumbnail {
 }
 #subheader {
   margin-bottom: 25px;
+}
+ion-slide img {
+  border-radius: 16px;
 }
 </style>
