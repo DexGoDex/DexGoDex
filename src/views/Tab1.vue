@@ -5,18 +5,10 @@
         <img src="assets/img/logo.png" height="24" style="margin-right:8px" />
         <p style="display:inline-block;font-weight:600;">TOS Mobile</p>
       </section>
-      <section id="subheader" class="ion-padding-horizontal">
-        <h1>
-          <strong>
-            Ayo explore <br />
-            cagar <span style="color:#088B61">Sidamukti </span>
-          </strong>
-        </h1>
-      </section>
+     
       <section class="ion-padding-horizontal">
         <ion-slides :options="slideOpts">
-          <ion-slide class="">
-            <div>
+          <ion-slide>
               <iframe
                 width="100%"
                 height="180"
@@ -26,11 +18,10 @@
                 allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-            </div>
           </ion-slide>
           <ion-slide>
             <iframe
-              width="80%"
+              width="100%"
               height="180"
               src="https://www.youtube.com/embed/wSmy_jd4TeU"
               title="YouTube video player"
@@ -41,6 +32,14 @@
           </ion-slide>
         </ion-slides>
         <br />
+      </section>
+      <section id="subheader" class="ion-padding-horizontal">
+        <h1>
+          <strong>
+            Ayo explore <br />
+            cagar <span style="color:#088B61">Sidamukti </span>
+          </strong>
+        </h1>
       </section>
       <ion-grid>
         <ion-row>
@@ -189,10 +188,9 @@ export default {
       speed: 400,
       slidesPerView: 1.5,
       spaceBetween: 15,
-      ionSlideTap: () => {
-        console.log("hello");
-      },
+      
     };
+    
     return { location };
   },
 };
@@ -234,7 +232,5 @@ ion-thumbnail {
 #subheader {
   margin-bottom: 25px;
 }
-ion-slide img {
-  border-radius: 16px;
-}
+
 </style>
