@@ -15,7 +15,7 @@
       </section>
       <section class="ion-padding-horizontal">
         <ion-slides :options="slideOpts">
-          <ion-slide>
+          <ion-slide class="">
             <div>
               <iframe
                 width="100%"
