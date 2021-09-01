@@ -10,15 +10,7 @@
 
     <ion-content :fullscreen="true">
       <section>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/FCsVykBuT6c"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <img src="assets/content1/sirkuit.png" height="275" />
       </section>
       <section class="ion-padding-horizontal">
         <h2>Judul</h2>
@@ -29,9 +21,11 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, nulla
           in lobortis consequat fames. Aliquam sed vestibulum, aenean feugiat
-          pretium amet
-          <button><span style="color:#088B61">selengkapnya</span></button>
+          pretium amet selengkapnya
         </p>
+        <div class="ion-text-left" style="margin-bottom: 25px">
+          <small style="color:rgba(58,58,58,50%)">Sumber: Terpercaya</small>
+        </div>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Galeri</h5>
