@@ -27,7 +27,9 @@
             Sosial media kami :
           </p>
           <ion-icon :icon="logoInstagram"></ion-icon>
-          <ion-icon :icon="logoTwitter"></ion-icon>
+          <a href="https://www.youtube.com/channel/UC0aVhPHJxTSTfN8_2jrqiNQ">
+            <ion-icon :icon="logoYoutube"></ion-icon>
+          </a>
           <ion-icon :icon="logoFacebook"></ion-icon>
         </div>
       </section>
@@ -40,7 +42,7 @@ import { IonPage, IonContent } from "@ionic/vue";
 import {
   call,
   logoInstagram,
-  logoTwitter,
+  logoYoutube,
   logoFacebook,
   calculator,
 } from "ionicons/icons";
@@ -55,7 +57,7 @@ export default {
     return {
       call,
       logoInstagram,
-      logoTwitter,
+      logoYoutube,
       logoFacebook,
       calculator,
     };

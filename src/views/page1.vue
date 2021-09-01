@@ -10,21 +10,28 @@
 
     <ion-content :fullscreen="true">
       <section>
-        <img src="assets/content1/sirkuit.png" height="275" />
+        <img src="assets/content1/sirkuit.png" height="250" />
       </section>
       <section class="ion-padding-horizontal">
-        <h2>Judul</h2>
-        <ion-text><ion-icon :icon="navigate"></ion-icon> Barat</ion-text>
+        <h2>Sirkuit Roadrace</h2>
+        <ion-text><ion-icon :icon="location"></ion-icon> Sidamukti</ion-text>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Deskripsi</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, nulla
-          in lobortis consequat fames. Aliquam sed vestibulum, aenean feugiat
-          pretium amet selengkapnya
+          Sirkuit Cibatu Majalengka merupakan sebuah tempat yang biasanya
+          digunakan untuk balapan motor. Sirkuit Cibatu Majalengka berada di
+          Dusun Cibatu, Kelurahan Munjul Majalengka dengan luas lebih dari 1200
+          meter, 120 meter street dengan lebar 12 meter di garis start terhitung
+          dari tikungan terakhir hingga memasuki tikungan pertama. Selain
+          sirkuit, terdapat lapangan sepak bola yang luasanya kurang lebih 3,5
+          hektar.
         </p>
         <div class="ion-text-left" style="margin-bottom: 25px">
-          <small style="color:rgba(58,58,58,50%)">Sumber: Terpercaya</small>
+          <small style="color:rgba(58,58,58,50%)"
+            >Sumber:
+            https://otomotifzone.com/siapa-bilang-sirkuit-permanen-cibatu-majalengka-tidak-layak-gelar-road-race/
+          </small>
         </div>
       </section>
       <section class="ion-padding-horizontal">
@@ -32,14 +39,14 @@
         <ion-slides :options="slideOpts" zoom>
           <ion-slide>
             <div class="swiper-zoom-container">
-              <img src="assets/img/content-video.png" />
+              <img src="assets/content1/sirkuit.png" />
             </div>
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content1/sirkuit2.png" />
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content1/sirkuit3.png" />
           </ion-slide>
         </ion-slides>
       </section>
@@ -84,7 +91,7 @@ import {
   IonBackButton,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
-import { navigate, call } from "ionicons/icons";
+import { location, call } from "ionicons/icons";
 
 export default defineComponent({
   name: "Home",
@@ -108,7 +115,7 @@ export default defineComponent({
       },
     };
     return {
-      navigate,
+      location,
       call,
       slideOpts,
     };
@@ -133,5 +140,8 @@ ion-slides {
 }
 ion-label {
   font-size: 14px;
+}
+p {
+  text-align: justify;
 }
 </style>

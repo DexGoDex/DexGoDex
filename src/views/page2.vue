@@ -10,42 +10,44 @@
 
     <ion-content :fullscreen="true">
       <section>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/FCsVykBuT6c"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <img src="assets/content2/paralayang1.png" height="250" />
       </section>
       <section class="ion-padding-horizontal">
-        <h2>Judul</h2>
-        <ion-text><ion-icon :icon="navigate"></ion-icon> Barat</ion-text>
+        <h2>Paralayang</h2>
+        <ion-text><ion-icon :icon="location"></ion-icon> Sidamukti</ion-text>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Deskripsi</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, nulla
-          in lobortis consequat fames. Aliquam sed vestibulum, aenean feugiat
-          pretium amet
-          <button><span style="color:#088B61">selengkapnya</span></button>
+          Paralayang merupakan tempat Wisata Alam yang terletak di Gunung Panten
+          Kelurahan Munjul Kecamatan Majalengka, Kabupaten Majalengka, Jawa
+          Barat. Paralayang berdekatan dengan Gunung Panten dan keduanya
+          dijadikan sebagai Objek Wisata. Wisata Paralayang bisa dinikmati oleh
+          anak mulai di umur 14 hingga 60 tahun. Pemadangan yang ada di sekitar
+          objek wisata Paralayang menjadi daya tarik wisatawan untuk menikmati
+          keindahan alam.
         </p>
+        <div class="ion-text-left" style="margin-bottom: 25px">
+          <small style="color:rgba(58,58,58,50%)"
+            >Sumber:
+            https://ihategreenjello.com/pesona-keindahan-obyek-wisata_69/
+            <br />https://www.cariinfoyuk.com/paralayang-majalengka/
+          </small>
+        </div>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Galeri</h5>
         <ion-slides :options="slideOpts" zoom>
           <ion-slide>
             <div class="swiper-zoom-container">
-              <img src="assets/img/content-video.png" />
+              <img src="assets/content2/paralayang1.png" />
             </div>
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content2/paralayang2.png" />
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content2/paralayang3.png" />
           </ion-slide>
         </ion-slides>
       </section>
@@ -90,7 +92,7 @@ import {
   IonBackButton,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
-import { navigate, call } from "ionicons/icons";
+import { location, call } from "ionicons/icons";
 
 export default defineComponent({
   name: "Home",
@@ -114,7 +116,7 @@ export default defineComponent({
       },
     };
     return {
-      navigate,
+      location,
       call,
       slideOpts,
     };
@@ -139,5 +141,8 @@ ion-slides {
 }
 ion-label {
   font-size: 14px;
+}
+p {
+  text-align: justify;
 }
 </style>

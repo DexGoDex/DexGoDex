@@ -7,30 +7,15 @@
       </section>
 
       <section class="ion-padding-horizontal">
-        <ion-slides :options="slideOpts" pager="true">
-          <ion-slide>
-            <iframe
-              width="80%"
-              height="180"
-              src="https://www.youtube.com/embed/6y5XjmhbiLY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </ion-slide>
-          <ion-slide>
-            <iframe
-              width="80%"
-              height="180"
-              src="https://www.youtube.com/embed/wSmy_jd4TeU"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </ion-slide>
-        </ion-slides>
+        <iframe
+          width="100%"
+          height="180"
+          src="https://www.youtube.com/embed/6y5XjmhbiLY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <br />
       </section>
       <section id="subheader" class="ion-padding-horizontal">
@@ -49,7 +34,7 @@
                 <ion-img src="assets/img/sirkuit.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
-                <ion-card-title> Sirkuit Cibatu</ion-card-title>
+                <ion-card-title> Sirkuit Roadrace</ion-card-title>
                 <ion-card-subtitle
                   ><ion-icon :icon="location"></ion-icon>
                   Majalengka</ion-card-subtitle
@@ -184,12 +169,6 @@ export default {
   },
 
   setup() {
-    const slideOpts = {
-      speed: 400,
-      slidesPerView: 1.5,
-      spaceBetween: 15,
-    };
-
     return { location };
   },
 };

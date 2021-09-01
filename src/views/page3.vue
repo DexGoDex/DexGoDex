@@ -10,42 +10,45 @@
 
     <ion-content :fullscreen="true">
       <section>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/FCsVykBuT6c"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <img src="assets/content3/karang1.png" height="250" />
       </section>
       <section class="ion-padding-horizontal">
-        <h2>Judul</h2>
-        <ion-text><ion-icon :icon="navigate"></ion-icon> Barat</ion-text>
+        <h2>Gunung Karang</h2>
+        <ion-text><ion-icon :icon="location"></ion-icon> Sidamukti</ion-text>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Deskripsi</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, nulla
-          in lobortis consequat fames. Aliquam sed vestibulum, aenean feugiat
-          pretium amet
-          <button><span style="color:#088B61">selengkapnya</span></button>
+          Wisata gunung karang, Majalengka salah satu potensi yang dikembangkan
+          oleh desa Sidamukti terutama ekowisatanya di dirikan pada tahun 2017.
+          Wisata Gunung karang yang sudah banyak di kunjungi sebagai tujuan
+          wisata baik dari pengunjung dosmetik yang berasal dari luar daerah.
+          Terdapat 1000 goa dan beberapa situs sejarah yang terdapat di Gunung
+          Karang. Gunung Karang terbentuk karena jatuhnya meteor yang jatuh di
+          tempat tersebut. Meteor jatuh tepat pada 400 tahun sebelum masehi.
+          Pada zaman pra-aksara, manusia purba hidup di Gunung Karang. Jenis
+          batuan gunung karang adalah andesit dan beberapa batu yang ditemukan
+          antaranya adalah batu meteor dan batu intan.
         </p>
+        <div class="ion-text-left" style="margin-bottom: 25px">
+          <small style="color:rgba(58,58,58,50%)"
+            >Sumber: https://www.len-diary.com/gunung-karang-majalengka/
+          </small>
+        </div>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Galeri</h5>
         <ion-slides :options="slideOpts" zoom>
           <ion-slide>
             <div class="swiper-zoom-container">
-              <img src="assets/img/content-video.png" />
+              <img src="assets/content3/karang1.png" />
             </div>
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content3/karang2.png" />
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content3/karang3.png" />
           </ion-slide>
         </ion-slides>
       </section>
@@ -90,7 +93,7 @@ import {
   IonBackButton,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
-import { navigate, call } from "ionicons/icons";
+import { location, call } from "ionicons/icons";
 
 export default defineComponent({
   name: "Home",
@@ -114,7 +117,7 @@ export default defineComponent({
       },
     };
     return {
-      navigate,
+      location,
       call,
       slideOpts,
     };
@@ -139,5 +142,8 @@ ion-slides {
 }
 ion-label {
   font-size: 14px;
+}
+p {
+  text-align: justify;
 }
 </style>
