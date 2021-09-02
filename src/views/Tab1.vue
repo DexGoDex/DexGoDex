@@ -266,10 +266,8 @@ ion-thumbnail {
 .hide{
   display: none;
 }
-
-.space{
-  height: 25px;
-  width: 100%;  
+ion-grid{
+  margin-top: 50px;
 }
 
 </style>
