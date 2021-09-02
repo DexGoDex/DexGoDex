@@ -35,6 +35,14 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/page7.vue')
   },
   {
+    path: '/cagar',
+    component: () => import('@/views/cagar.vue')
+  },
+  {
+    path: '/ekowisata',
+    component: () => import('@/views/ekowisata.vue')
+  },
+  {
     path: '/tabs/',
     component: Tabs,
     children: [

@@ -26,6 +26,19 @@
           </strong>
         </h1>
       </section>
+      <ion-tabs>
+        <ion-router-outlet></ion-router-outlet>
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="cagar" href="/tabs/cagar">
+            <ion-label>Cagar</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button tab="ekowisata" href="/tabs/ekowisata">
+            <ion-label>Ekowisata</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+      <br />
       <ion-grid>
         <ion-row>
           <ion-col>

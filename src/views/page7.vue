@@ -10,28 +10,23 @@
 
     <ion-content :fullscreen="true">
       <section>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/FCsVykBuT6c"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <img src="assets/content1/sirkuit.png" height="275" />
       </section>
       <section class="ion-padding-horizontal">
-        <h2>Judul</h2>
-        <ion-text><ion-icon :icon="navigate"></ion-icon> Barat</ion-text>
+        <h2>Arum Jeram</h2>
+        <ion-text><ion-icon :icon="location"></ion-icon> Sidamukti</ion-text>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Deskripsi</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, nulla
-          in lobortis consequat fames. Aliquam sed vestibulum, aenean feugiat
-          pretium amet
-          <button><span style="color:#088B61">selengkapnya</span></button>
+          Arum jeram memiliki panjang sekitar 1 KM. Desa Sidamukti memfasilitasi
+          untuk masyarakat seperti perlengkapan keamanan, dayung, dan perahu.
+          Biasanya arum jeram sudah satu paket dengan wisata lainnya. Yuk,
+          berlibur di Arum Jeram Desa Sidamukti!
         </p>
+        <div class="ion-text-left" style="margin-bottom: 25px">
+          <small style="color:rgba(58,58,58,50%)">Sumber: Terpercaya</small>
+        </div>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Galeri</h5>
@@ -90,7 +85,7 @@ import {
   IonBackButton,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
-import { navigate, call } from "ionicons/icons";
+import { location, call } from "ionicons/icons";
 
 export default defineComponent({
   name: "Home",
@@ -114,7 +109,7 @@ export default defineComponent({
       },
     };
     return {
-      navigate,
+      location,
       call,
       slideOpts,
     };
@@ -139,5 +134,8 @@ ion-slides {
 }
 ion-label {
   font-size: 14px;
+}
+p {
+  text-align: justify;
 }
 </style>

@@ -22,16 +22,16 @@
           Paralayang merupakan tempat Wisata Alam yang terletak di Gunung Panten
           Kelurahan Munjul Kecamatan Majalengka, Kabupaten Majalengka, Jawa
           Barat. Paralayang berdekatan dengan Gunung Panten dan keduanya
-          dijadikan sebagai Objek Wisata. Wisata Paralayang bisa dinikmati oleh
-          anak mulai di umur 14 hingga 60 tahun. Pemadangan yang ada di sekitar
-          objek wisata Paralayang menjadi daya tarik wisatawan untuk menikmati
-          keindahan alam.
+          dijadikan sebagai Objek Wisata. Lokasi wisata Paralayang yang sangat
+          mudah di askes oleh para wisatawan menjadikan wisata ini banyak di
+          kunjungi untuk menikmati potensi alam yang ada di Majalengka.
         </p>
         <div class="ion-text-left" style="margin-bottom: 25px">
           <small style="color:rgba(58,58,58,50%)"
             >Sumber:
             https://ihategreenjello.com/pesona-keindahan-obyek-wisata_69/
-            <br />https://www.cariinfoyuk.com/paralayang-majalengka/
+            <br />Sumber: https://www.cariinfoyuk.com/paralayang-majalengka/
+            <br />Sumber: Tim Univ UHAMKA
           </small>
         </div>
       </section>

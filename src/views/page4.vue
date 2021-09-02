@@ -10,21 +10,27 @@
 
     <ion-content :fullscreen="true">
       <section>
-        <img src="assets/content1/sirkuit.png" height="275" />
+        <img src="assets/content4/sanggar1.png" height="250" />
       </section>
       <section class="ion-padding-horizontal">
-        <h2>Judul</h2>
-        <ion-text><ion-icon :icon="navigate"></ion-icon> Barat</ion-text>
+        <h2>Sanggar seni</h2>
+        <ion-text><ion-icon :icon="location"></ion-icon> Sidamukti</ion-text>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Deskripsi</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, nulla
-          in lobortis consequat fames. Aliquam sed vestibulum, aenean feugiat
-          pretium amet selengkapnya
+          Sanggar Seni Secara bahasa, lugay artinya gerak sedangkan rumingkang
+          artinya berdiri. Sanggar tari tersebut berdiri sejak tahun 2016 yang
+          didirikan oleh Ibu Eka dan suami. Hal yang paling menonjol dari
+          sanggar seni lugay rumingkang adalah tari jaipong karena tarian
+          tersebut dikreasikan oleh pemilik sanggar seni. Selain itu, di sanggar
+          seni tersebut tidak hanya ada seni tari tetapi juga ada karawitan.
+          Biasanya, karawitan berlatih setiap hari Jumat.
         </p>
         <div class="ion-text-left" style="margin-bottom: 25px">
-          <small style="color:rgba(58,58,58,50%)">Sumber: Terpercaya</small>
+          <small style="color:rgba(58,58,58,50%)"
+            >Sumber: Tim Univ UHAMKA
+          </small>
         </div>
       </section>
       <section class="ion-padding-horizontal">
@@ -32,14 +38,14 @@
         <ion-slides :options="slideOpts" zoom>
           <ion-slide>
             <div class="swiper-zoom-container">
-              <img src="assets/img/content-video.png" />
+              <img src="assets/content4/sanggar1.png" />
             </div>
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content4/sanggar2.png" />
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content4/sanggar3.png" />
           </ion-slide>
         </ion-slides>
       </section>
@@ -84,7 +90,7 @@ import {
   IonBackButton,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
-import { navigate, call } from "ionicons/icons";
+import { location, call } from "ionicons/icons";
 
 export default defineComponent({
   name: "Home",
@@ -108,7 +114,7 @@ export default defineComponent({
       },
     };
     return {
-      navigate,
+      location,
       call,
       slideOpts,
     };
@@ -133,5 +139,8 @@ ion-slides {
 }
 ion-label {
   font-size: 14px;
+}
+p {
+  text-align: justify;
 }
 </style>

@@ -10,21 +10,35 @@
 
     <ion-content :fullscreen="true">
       <section>
-        <img src="assets/content1/sirkuit.png" height="275" />
+        <img src="assets/content5/panten1.png" height="250" />
       </section>
       <section class="ion-padding-horizontal">
-        <h2>Judul</h2>
-        <ion-text><ion-icon :icon="navigate"></ion-icon> Barat</ion-text>
+        <h2>Gunung Panten</h2>
+        <ion-text><ion-icon :icon="location"></ion-icon> Sidamukti</ion-text>
       </section>
       <section class="ion-padding-horizontal">
         <h5>Deskripsi</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, nulla
-          in lobortis consequat fames. Aliquam sed vestibulum, aenean feugiat
-          pretium amet selengkapnya
+          Salah satu cagar budaya yang terdapat di desa Sidamukti yaitu terdapat
+          Gunung Panten. Gunung Panten memiliki patilasan prabu siliwangi yang
+          sesuai dengan sejarah kawali ciamis. Menurut informasi yang kami
+          dapat, batu tersebut berbentuk burung garuda yang terlihat dari
+          samping. Menurut kepala desa, bahwa nama gunung pantem berasal dari
+          kata “Panten” yang berarti air. Pada zaman dahulu, gunung panten
+          adalah sumber air yang menandakan kehidupan. Sebelum raja prabu
+          siliwango mendapatkan gelar raja, Raja Prabu Siliwangi bertapa dalam 7
+          tempat, yaitu: <br />1. Gunung Panten <br />
+          2. Gunung Agung <br />
+          3. Gunung Sangiang <br />
+          4. Gunung Raga Galuh <br />
+          5. Gunung Payung <br />
+          6. Gunung Sibanjaran <br />
+          7. Gunung Karang
         </p>
         <div class="ion-text-left" style="margin-bottom: 25px">
-          <small style="color:rgba(58,58,58,50%)">Sumber: Terpercaya</small>
+          <small style="color:rgba(58,58,58,50%)"
+            >Sumber: Tim Univ UHAMKA
+          </small>
         </div>
       </section>
       <section class="ion-padding-horizontal">
@@ -32,14 +46,14 @@
         <ion-slides :options="slideOpts" zoom>
           <ion-slide>
             <div class="swiper-zoom-container">
-              <img src="assets/img/content-video.png" />
+              <img src="assets/content5/panten1.png" />
             </div>
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content3/karang2.png" />
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content3/karang3.png" />
           </ion-slide>
         </ion-slides>
       </section>
@@ -84,7 +98,7 @@ import {
   IonBackButton,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
-import { navigate, call } from "ionicons/icons";
+import { location, call } from "ionicons/icons";
 
 export default defineComponent({
   name: "Home",
@@ -108,7 +122,7 @@ export default defineComponent({
       },
     };
     return {
-      navigate,
+      location,
       call,
       slideOpts,
     };
@@ -133,5 +147,8 @@ ion-slides {
 }
 ion-label {
   font-size: 14px;
+}
+p {
+  text-align: justify;
 }
 </style>

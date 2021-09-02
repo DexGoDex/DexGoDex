@@ -31,6 +31,8 @@
           <small style="color:rgba(58,58,58,50%)"
             >Sumber:
             https://otomotifzone.com/siapa-bilang-sirkuit-permanen-cibatu-majalengka-tidak-layak-gelar-road-race/
+            <br />
+            Sumber: Sumber: Tim Univ UHAMKA
           </small>
         </div>
       </section>
