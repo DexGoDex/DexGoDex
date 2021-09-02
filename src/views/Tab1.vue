@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <section id="header" class="ion-padding">
+      <section id="header" class="ion-padding" >
         <img src="assets/img/logo.png" height="24" style="margin-right:8px" />
         <p style="display:inline-block;font-weight:600;">TOS Mobile</p>
       </section>
@@ -26,20 +26,49 @@
           </strong>
         </h1>
       </section>
-      <ion-tabs>
-        <ion-router-outlet></ion-router-outlet>
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="cagar" href="/tabs/cagar">
+      <ion-tabs style="margin-bottom:100px">
+        <ion-tab-bar slot="bottom" >
+          <ion-tab-button @click="CagarClick()">
             <ion-label>Cagar</ion-label>
           </ion-tab-button>
-
-          <ion-tab-button tab="ekowisata" href="/tabs/ekowisata">
+          <ion-tab-button @click="EkowisataClick()" >
             <ion-label>Ekowisata</ion-label>
           </ion-tab-button>
         </ion-tab-bar>
       </ion-tabs>
-      <br />
-      <ion-grid>
+      <ion-grid id="cagar">
+        <ion-row>
+          <ion-col>
+            <ion-card href="../page1">
+              <ion-thumbnail>
+                <ion-img src="assets/img/sirkuit.png"> </ion-img>
+              </ion-thumbnail>
+              <ion-card-header>
+                <ion-card-title> Sirkuit Roadrace</ion-card-title>
+                <ion-card-subtitle
+                  ><ion-icon :icon="location"></ion-icon>
+                  Majalengka</ion-card-subtitle
+                >
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card href="../page2">
+              <ion-thumbnail>
+                <ion-img src="assets/img/paralayang.png"> </ion-img>
+              </ion-thumbnail>
+              <ion-card-header>
+                <ion-card-title>Paralayang </ion-card-title>
+                <ion-card-subtitle
+                  ><ion-icon :icon="location"></ion-icon>
+                  Majalengka</ion-card-subtitle
+                >
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid id="ekowisata" style="display:none">
         <ion-row>
           <ion-col>
             <ion-card href="../page1">
@@ -116,7 +145,7 @@
             </ion-card>
           </ion-col>
           <ion-col>
-            <ion-card href="../page6">
+            <ion-card href="../page6" >
               <ion-thumbnail>
                 <ion-img src="assets/img/pasar.png"> </ion-img>
               </ion-thumbnail>
@@ -153,7 +182,7 @@
   </ion-page>
 </template>
 
-<script lang="ts">
+<script >
 import {
   IonGrid,
   IonCol,
@@ -169,6 +198,7 @@ import { location } from "ionicons/icons";
 
 export default {
   name: "Tab1",
+
   components: {
     IonGrid,
     IonCol,
@@ -180,7 +210,17 @@ export default {
     IonContent,
     IonPage,
   },
-
+  
+  methods:{
+    CagarClick(){
+      document.getElementById("cagar").style.display = "block";
+      document.getElementById("ekowisata").style.display = "none";
+    },
+    EkowisataClick(){
+      document.getElementById("cagar").style.display = "none";
+      document.getElementById("ekowisata").style.display = "block";
+    }
+  },
   setup() {
     return { location };
   },
@@ -223,4 +263,13 @@ ion-thumbnail {
 #subheader {
   margin-bottom: 25px;
 }
+.hide{
+  display: none;
+}
+
+.space{
+  height: 25px;
+  width: 100%;  
+}
+
 </style>
