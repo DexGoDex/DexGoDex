@@ -26,12 +26,12 @@
           </strong>
         </h1>
       </section>
-      <ion-tabs style="margin-bottom:100px">
+      <ion-tabs style="margin-bottom:100px;" class="ion-padding-horizontal">
         <ion-tab-bar slot="bottom">
-          <ion-tab-button @click="CagarClick()">
+          <ion-tab-button @click.stop="CagarClick($event)" selected>
             <ion-label>Cagar</ion-label>
           </ion-tab-button>
-          <ion-tab-button @click="EkowisataClick()">
+          <ion-tab-button @click.stop="EkowisataClick($event)">
             <ion-label>Ekowisata</ion-label>
           </ion-tab-button>
         </ion-tab-bar>
@@ -181,11 +181,13 @@ export default {
   },
 
   methods: {
-    CagarClick() {
+    CagarClick(event) {
+      event.target.setAttribute("selected", "false");
       document.getElementById("cagar").style.display = "block";
       document.getElementById("ekowisata").style.display = "none";
     },
-    EkowisataClick() {
+    EkowisataClick(event) {
+      event.target.setAttribute("selected", "true");
       document.getElementById("cagar").style.display = "none";
       document.getElementById("ekowisata").style.display = "block";
     },
@@ -236,25 +238,26 @@ ion-thumbnail {
   display: none;
 }
 ion-grid {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 ion-tab {
   border: solid;
 }
-
+ion-tab-bar{
+  border-top: none;
+  width: 200px;
+  margin: auto;
+  background:rgb(231, 229, 229) ;
+  padding: 10px;
+  border-radius: 6px;
+}
 ion-tab-button {
   background-color: white;
-  color: #088b61;
-  cursor: pointer;
-  transition-delay: 200ms;
-  padding: 14px 16px;
-  font-weight: bold;
   font-size: 14px;
-  border-radius: 20px;
-  border-bottom-style: groove;
-  border-top-style: groove;
+  border-radius: 4px;
+  background:  rgb(231, 229, 229);
 }
-ion-tab-button:hover {
-  background-color: rgb(231, 229, 229);
+ion-tab-button:hover{
+  background-color: white;
 }
 </style>
