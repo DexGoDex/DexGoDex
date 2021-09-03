@@ -50,10 +50,10 @@
             </div>
           </ion-slide>
           <ion-slide>
-            <img src="assets/content3/karang2.png" />
+            <img src="assets/content5/panten2.png" />
           </ion-slide>
           <ion-slide>
-            <img src="assets/content3/karang3.png" />
+            <img src="assets/content5/panten3.png" />
           </ion-slide>
         </ion-slides>
       </section>

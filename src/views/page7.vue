@@ -10,10 +10,10 @@
 
     <ion-content :fullscreen="true">
       <section>
-        <img src="assets/content1/sirkuit.png" height="275" />
+        <img src="assets/content7/arungjeram1.png" height="275" />
       </section>
       <section class="ion-padding-horizontal">
-        <h2>Arum Jeram</h2>
+        <h2>Arung Jeram</h2>
         <ion-text><ion-icon :icon="location"></ion-icon> Sidamukti</ion-text>
       </section>
       <section class="ion-padding-horizontal">
@@ -33,7 +33,7 @@
         <ion-slides :options="slideOpts" zoom>
           <ion-slide>
             <div class="swiper-zoom-container">
-              <img src="assets/img/content-video.png" />
+              <img src="assets/content7/arungjeram1.png" />
             </div>
           </ion-slide>
           <ion-slide>

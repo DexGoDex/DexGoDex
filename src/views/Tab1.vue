@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <section id="header" class="ion-padding" >
+      <section id="header" class="ion-padding">
         <img src="assets/img/logo.png" height="24" style="margin-right:8px" />
         <p style="display:inline-block;font-weight:600;">TOS Mobile</p>
       </section>
@@ -22,16 +22,16 @@
         <h1>
           <strong>
             Ayo explore <br />
-            cagar <span style="color:#088B61">Sidamukti </span>
+            <span style="color:#088B61">Sidamukti </span>
           </strong>
         </h1>
       </section>
       <ion-tabs style="margin-bottom:100px">
-        <ion-tab-bar slot="bottom" >
+        <ion-tab-bar slot="bottom">
           <ion-tab-button @click="CagarClick()">
             <ion-label>Cagar</ion-label>
           </ion-tab-button>
-          <ion-tab-button @click="EkowisataClick()" >
+          <ion-tab-button @click="EkowisataClick()">
             <ion-label>Ekowisata</ion-label>
           </ion-tab-button>
         </ion-tab-bar>
@@ -39,12 +39,12 @@
       <ion-grid id="cagar">
         <ion-row>
           <ion-col>
-            <ion-card href="../page1">
+            <ion-card href="../page4">
               <ion-thumbnail>
-                <ion-img src="assets/img/sirkuit.png"> </ion-img>
+                <ion-img src="assets/img/seni.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
-                <ion-card-title> Sirkuit Roadrace</ion-card-title>
+                <ion-card-title>Sanggar Seni</ion-card-title>
                 <ion-card-subtitle
                   ><ion-icon :icon="location"></ion-icon>
                   Majalengka</ion-card-subtitle
@@ -53,12 +53,29 @@
             </ion-card>
           </ion-col>
           <ion-col>
-            <ion-card href="../page2">
+            <ion-card href="../page5">
               <ion-thumbnail>
-                <ion-img src="assets/img/paralayang.png"> </ion-img>
+                <ion-img src="assets/img/panten.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
-                <ion-card-title>Paralayang </ion-card-title>
+                <ion-card-title>Gunung Panten</ion-card-title>
+                <ion-card-subtitle
+                  ><ion-icon :icon="location"></ion-icon>
+                  Majalengka</ion-card-subtitle
+                >
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col> </ion-col>
+          <ion-col>
+            <ion-card href="../page3">
+              <ion-thumbnail>
+                <ion-img src="assets/img/karang.png"> </ion-img>
+              </ion-thumbnail>
+              <ion-card-header>
+                <ion-card-title>Gunung Karang</ion-card-title>
                 <ion-card-subtitle
                   ><ion-icon :icon="location"></ion-icon>
                   Majalengka</ion-card-subtitle
@@ -100,52 +117,8 @@
           </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>
-            <ion-card href="../page3">
-              <ion-thumbnail>
-                <ion-img src="assets/img/karang.png"> </ion-img>
-              </ion-thumbnail>
-              <ion-card-header>
-                <ion-card-title>Gunung Karang</ion-card-title>
-                <ion-card-subtitle
-                  ><ion-icon :icon="location"></ion-icon>
-                  Majalengka</ion-card-subtitle
-                >
-              </ion-card-header>
-            </ion-card>
-          </ion-col>
-          <ion-col>
-            <ion-card href="../page4">
-              <ion-thumbnail>
-                <ion-img src="assets/img/seni.png"> </ion-img>
-              </ion-thumbnail>
-              <ion-card-header>
-                <ion-card-title>Sanggar Seni</ion-card-title>
-                <ion-card-subtitle
-                  ><ion-icon :icon="location"></ion-icon>
-                  Majalengka</ion-card-subtitle
-                >
-              </ion-card-header>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <ion-card href="../page5">
-              <ion-thumbnail>
-                <ion-img src="assets/img/panten.png"> </ion-img>
-              </ion-thumbnail>
-              <ion-card-header>
-                <ion-card-title>Gunung Panten</ion-card-title>
-                <ion-card-subtitle
-                  ><ion-icon :icon="location"></ion-icon>
-                  Majalengka</ion-card-subtitle
-                >
-              </ion-card-header>
-            </ion-card>
-          </ion-col>
-          <ion-col>
-            <ion-card href="../page6" >
+          <ion-col
+            ><ion-card href="../page6">
               <ion-thumbnail>
                 <ion-img src="assets/img/pasar.png"> </ion-img>
               </ion-thumbnail>
@@ -156,11 +129,8 @@
                   Majalengka</ion-card-subtitle
                 >
               </ion-card-header>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col> </ion-col>
+            </ion-card></ion-col
+          >
           <ion-col>
             <ion-card href="../page7">
               <ion-thumbnail>
@@ -174,7 +144,6 @@
                 >
               </ion-card-header>
             </ion-card>
-            `
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -182,7 +151,7 @@
   </ion-page>
 </template>
 
-<script >
+<script>
 import {
   IonGrid,
   IonCol,
@@ -210,16 +179,16 @@ export default {
     IonContent,
     IonPage,
   },
-  
-  methods:{
-    CagarClick(){
+
+  methods: {
+    CagarClick() {
       document.getElementById("cagar").style.display = "block";
       document.getElementById("ekowisata").style.display = "none";
     },
-    EkowisataClick(){
+    EkowisataClick() {
       document.getElementById("cagar").style.display = "none";
       document.getElementById("ekowisata").style.display = "block";
-    }
+    },
   },
   setup() {
     return { location };
@@ -263,11 +232,29 @@ ion-thumbnail {
 #subheader {
   margin-bottom: 25px;
 }
-.hide{
+.hide {
   display: none;
 }
-ion-grid{
+ion-grid {
   margin-top: 50px;
 }
+ion-tab {
+  border: solid;
+}
 
+ion-tab-button {
+  background-color: white;
+  color: #088b61;
+  cursor: pointer;
+  transition-delay: 200ms;
+  padding: 14px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 20px;
+  border-bottom-style: groove;
+  border-top-style: groove;
+}
+ion-tab-button:hover {
+  background-color: rgb(231, 229, 229);
+}
 </style>

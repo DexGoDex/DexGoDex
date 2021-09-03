@@ -10,7 +10,7 @@
 
     <ion-content :fullscreen="true">
       <section>
-        <img src="assets/content1/sirkuit.png" height="275" />
+        <img src="assets/content6/pasarwisata1.png" height="275" />
       </section>
       <section class="ion-padding-horizontal">
         <h2>Pasar Wisata</h2>
@@ -36,7 +36,7 @@
         <ion-slides :options="slideOpts" zoom>
           <ion-slide>
             <div class="swiper-zoom-container">
-              <img src="assets/img/content-video.png" />
+              <img src="assets/content6/pasarwisata1.png" />
             </div>
           </ion-slide>
           <ion-slide>
