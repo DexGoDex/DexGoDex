@@ -184,13 +184,11 @@ export default {
   },
 
   methods: {
-    CagarClick(event) {
-    
+    CagarClick(event) { 
       document.getElementById("cagar").style.display = "block";
       document.getElementById("ekowisata").style.display = "none";
     },
     EkowisataClick(event) {
-     
       document.getElementById("cagar").style.display = "none";
       document.getElementById("ekowisata").style.display = "block";
     },
