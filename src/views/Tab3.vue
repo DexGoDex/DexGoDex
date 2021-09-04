@@ -6,31 +6,38 @@
           <img src="assets/img/Illustration.png" />
         </div>
         <div class="ion-text-center">
-          <p>
+          <h5>
             Untuk informasi lebih lanjut,<br />
-            hubungi kontak dibawah ini
+            hubungi kontak dibawah ini:
+          </h5>
+          <p>
+            1. Kepala Desa Selaku Penanggjung Jawab Desa Sidamukti<br />
+            2. Pak Iwa Selaku Penanggjung Jawab Lembaga Adat Desa<br />
+            3. Pak Umi Selaku Penyimpan Data Informasi Wisata dan Adat Desa
           </p>
         </div>
         <div class="ion-text-center">
-          <ion-button href="https://wa.me/6285810443581">
+          <ion-button href="https://wa.me/6281381534744">
             <ion-icon :icon="call" style="margin-right:10px" />
-            <ion-label><b>Contact</b></ion-label>
+            <ion-label><b>Hubungi Kepala Desa</b></ion-label>
+          </ion-button>
+        </div>
+        <div class="ion-text-center">
+          <ion-button href="https://wa.me/6285322071111">
+            <ion-icon :icon="call" style="margin-right:10px" />
+            <ion-label><b>Hubungi Pak Iwa</b></ion-label>
+          </ion-button>
+        </div>
+        <div class="ion-text-center">
+          <ion-button href="https://wa.me/6282216370078">
+            <ion-icon :icon="call" style="margin-right:10px" />
+            <ion-label><b>Hubungi Pak Umi</b></ion-label>
           </ion-button>
         </div>
         <div class="ion-text-center" style="margin-bottom: 25px">
           <small style="color:rgba(58,58,58,40%)"
             >Selain yg ada diaplikasi ini, semuanya penipuan</small
           >
-        </div>
-        <div class="ion-text-center" id="social-media">
-          <p>
-            Sosial media kami :
-          </p>
-          <ion-icon :icon="logoInstagram"></ion-icon>
-          <a href="https://www.youtube.com/channel/UC0aVhPHJxTSTfN8_2jrqiNQ">
-            <ion-icon :icon="logoYoutube"></ion-icon>
-          </a>
-          <ion-icon :icon="logoFacebook"></ion-icon>
         </div>
       </section>
     </ion-content>
@@ -66,7 +73,7 @@ export default {
 </script>
 <style scoped>
 section {
-  height: 100%;
+  height: 130%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,5 +91,8 @@ ion-button {
   height: 60px;
   width: 300px;
   --border-radius: 16px;
+}
+p {
+  text-align: left;
 }
 </style>

@@ -22,13 +22,12 @@
             Pd. Selain itu, juga terdapat mahasiswa yang membantu dalam
             pembuatan aplikasi ini diantaranya Barokah Asmaul Husna, Gery
             Erlangga, Gheifira Aprisa Wardhantari, Herdin Muhtarom, Rahmah
-            Faradilla, Tarisya Aulia, Amir Syawaludin, dan Muhammad Akbar
-            Maulana Rahmat. Semoga aplikasi ini dapat membantu masyarakat dalam
-            mencari informasi untuk berwisata dan menambah wawasan masyarakat.
+            Faradilla, Tarisya Aulia, dan Muhammad Akbar Maulana Rahmat. Semoga
+            aplikasi ini dapat membantu masyarakat dalam mencari informasi untuk
+            berwisata dan menambah wawasan masyarakat.
           </p>
         </div>
       </section>
-      
     </ion-content>
   </ion-page>
 </template>
