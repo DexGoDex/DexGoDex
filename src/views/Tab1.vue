@@ -161,7 +161,7 @@ import {
   IonCardTitle,
   IonPage,
   IonContent,
-  IonSegment, 
+  IonSegment,
   IonSegmentButton,
 } from "@ionic/vue";
 import { location } from "ionicons/icons";
@@ -179,18 +179,16 @@ export default {
     IonCardTitle,
     IonContent,
     IonPage,
-    IonSegment, 
+    IonSegment,
     IonSegmentButton,
   },
 
   methods: {
     CagarClick(event) {
-    
       document.getElementById("cagar").style.display = "block";
       document.getElementById("ekowisata").style.display = "none";
     },
     EkowisataClick(event) {
-     
       document.getElementById("cagar").style.display = "none";
       document.getElementById("ekowisata").style.display = "block";
     },
@@ -244,13 +242,12 @@ ion-grid {
   margin-top: 20px;
 }
 
-ion-segment{
+ion-segment {
   padding: 10px;
   width: 300px;
   margin: auto;
-  
 }
-ion-segment-button{
-  --color-checked	: #088b61;
+ion-segment-button {
+  --color-checked: #088b61;
 }
 </style>

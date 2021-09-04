@@ -11,9 +11,7 @@
             hubungi kontak dibawah ini:
           </h5>
           <p>
-            1. Kepala Desa Selaku Penanggjung Jawab Desa Sidamukti<br />
-            2. Pak Iwa Selaku Penanggjung Jawab Lembaga Adat Desa<br />
-            3. Pak Umi Selaku Penyimpan Data Informasi Wisata dan Adat Desa
+            Pengurus Desa Sidamukti
           </p>
         </div>
         <div class="ion-text-center">
@@ -73,7 +71,7 @@ export default {
 </script>
 <style scoped>
 section {
-  height: 130%;
+  height: 110%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,8 +89,5 @@ ion-button {
   height: 60px;
   width: 300px;
   --border-radius: 16px;
-}
-p {
-  text-align: left;
 }
 </style>
