@@ -3,6 +3,11 @@
     <ion-content :fullscreen="true">
       <section>
         <div class="ion-text-center">
+          <img src="assets/img/LogoUhamka.jpeg" />
+        </div>
+      </section>
+      <section>
+        <div class="ion-text-center">
           <h5>
             <strong><span style="color:#088B61">About Us</span></strong>
           </h5>
@@ -23,11 +28,7 @@
           </p>
         </div>
       </section>
-      <section>
-        <div class="ion-text-center">
-          <img src="assets/img/LogoUhamka.jpeg" />
-        </div>
-      </section>
+      
     </ion-content>
   </ion-page>
 </template>
@@ -46,7 +47,6 @@ export default {
 </script>
 <style scoped>
 section {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

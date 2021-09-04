@@ -183,6 +183,7 @@ export default {
   methods: {
     CagarClick(event) {
       event.target.setAttribute("selected", "false");
+      console.log(event.target.nextElementSibling);
       document.getElementById("cagar").style.display = "block";
       document.getElementById("ekowisata").style.display = "none";
     },
