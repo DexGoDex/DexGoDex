@@ -26,16 +26,15 @@
           </strong>
         </h1>
       </section>
-      <ion-tabs style="margin-bottom:100px;" class="ion-padding-horizontal">
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button @click.stop="CagarClick($event)" selected>
-            <ion-label>Cagar</ion-label>
-          </ion-tab-button>
-          <ion-tab-button @click.stop="EkowisataClick($event)">
-            <ion-label>Ekowisata</ion-label>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
+      <ion-segment mode="ios" value="cagar">
+        <ion-segment-button value="cagar" @click="CagarClick($event)">
+          <ion-label>Cagar Budaya</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="ekowisata" @click="EkowisataClick($event)">
+          <ion-label>Ekowisata</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
       <ion-grid id="cagar">
         <ion-row>
           <ion-col>
@@ -162,6 +161,8 @@ import {
   IonCardTitle,
   IonPage,
   IonContent,
+  IonSegment, 
+  IonSegmentButton,
 } from "@ionic/vue";
 import { location } from "ionicons/icons";
 
@@ -178,17 +179,18 @@ export default {
     IonCardTitle,
     IonContent,
     IonPage,
+    IonSegment, 
+    IonSegmentButton,
   },
 
   methods: {
     CagarClick(event) {
-      event.target.setAttribute("selected", "false");
-      console.log(event.target.nextElementSibling);
+    
       document.getElementById("cagar").style.display = "block";
       document.getElementById("ekowisata").style.display = "none";
     },
     EkowisataClick(event) {
-      event.target.setAttribute("selected", "true");
+     
       document.getElementById("cagar").style.display = "none";
       document.getElementById("ekowisata").style.display = "block";
     },
@@ -241,24 +243,14 @@ ion-thumbnail {
 ion-grid {
   margin-top: 20px;
 }
-ion-tab {
-  border: solid;
-}
-ion-tab-bar{
-  border-top: none;
-  width: 200px;
-  margin: auto;
-  background:rgb(231, 229, 229) ;
+
+ion-segment{
   padding: 10px;
-  border-radius: 6px;
+  width: 300px;
+  margin: auto;
+  
 }
-ion-tab-button {
-  background-color: white;
-  font-size: 14px;
-  border-radius: 4px;
-  background:  rgb(231, 229, 229);
-}
-ion-tab-button:hover{
-  background-color: white;
+ion-segment-button{
+  --color-checked	: #088b61;
 }
 </style>
