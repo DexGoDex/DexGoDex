@@ -17,6 +17,11 @@
           <ion-icon :icon="call" />
           <ion-label>Contact</ion-label>
         </ion-tab-button>
+
+        <ion-tab-button tab="tababout" href="/tabs/tababout">
+          <ion-icon :icon="people" />
+          <ion-label>About Us</ion-label>
+        </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
   </ion-page>
@@ -32,7 +37,7 @@ import {
   IonPage,
   IonRouterOutlet,
 } from "@ionic/vue";
-import { map, call, home } from "ionicons/icons";
+import { map, call, home, people } from "ionicons/icons";
 
 export default {
   name: "Tabs",
@@ -50,6 +55,7 @@ export default {
       map,
       call,
       home,
+      people,
     };
   },
 };
