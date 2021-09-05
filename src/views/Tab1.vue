@@ -136,7 +136,7 @@
                 <ion-img src="assets/img/arumjeram.png"> </ion-img>
               </ion-thumbnail>
               <ion-card-header>
-                <ion-card-title>Arum Jeram</ion-card-title>
+                <ion-card-title>Arung Jeram</ion-card-title>
                 <ion-card-subtitle
                   ><ion-icon :icon="location"></ion-icon>
                   Majalengka</ion-card-subtitle

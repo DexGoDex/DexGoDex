@@ -37,10 +37,10 @@
             </div>
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content7/arungjeram2.png" />
           </ion-slide>
           <ion-slide>
-            <img src="assets/img/content-video.png" />
+            <img src="assets/content7/arungjeram3.png" />
           </ion-slide>
         </ion-slides>
       </section>
