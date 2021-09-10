@@ -185,7 +185,6 @@ export default {
 
   methods: {
     segmentChanged(ev) {
-      console.log(ev.detail.value);
       if (ev.detail.value == "cagar") {
          document.getElementById("cagar").style.display = "block";
           document.getElementById("ekowisata").style.display = "none";
