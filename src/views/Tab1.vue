@@ -26,11 +26,11 @@
           </strong>
         </h1>
       </section>
-      <ion-segment mode="ios" value="cagar">
-        <ion-segment-button value="cagar" @click="CagarClick($event)">
+      <ion-segment mode="ios" value="cagar"  @ionChange="segmentChanged($event)">
+        <ion-segment-button value="cagar">
           <ion-label>Cagar Budaya</ion-label>
         </ion-segment-button>
-        <ion-segment-button value="ekowisata" @click="EkowisataClick($event)">
+        <ion-segment-button value="ekowisata">
           <ion-label>Ekowisata</ion-label>
         </ion-segment-button>
       </ion-segment>
@@ -184,14 +184,19 @@ export default {
   },
 
   methods: {
-    CagarClick(event) {
-      document.getElementById("cagar").style.display = "block";
-      document.getElementById("ekowisata").style.display = "none";
+    segmentChanged(ev) {
+      console.log(ev.detail.value);
+      if (ev.detail.value == "cagar") {
+         document.getElementById("cagar").style.display = "block";
+          document.getElementById("ekowisata").style.display = "none";
+      }else if(ev.detail.value == "ekowisata"){
+        document.getElementById("cagar").style.display = "none";
+        document.getElementById("ekowisata").style.display = "block";
+      }
     },
-    EkowisataClick(event) {
-      document.getElementById("cagar").style.display = "none";
-      document.getElementById("ekowisata").style.display = "block";
-    },
+  },
+  mounted: function() {
+    alert("halo")
   },
   setup() {
     return { location };
